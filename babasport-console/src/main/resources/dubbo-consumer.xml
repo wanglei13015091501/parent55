@@ -29,7 +29,9 @@
     <dubbo:registry address="N/A"/>
 
     <!--3.引用接口-->
-    <dubbo:reference interface="com.itheima.core.service.TestTbService" id="testService" url="dubbo://127.0.0.1:20880"/>
+    <dubbo:reference interface="com.itheima.core.service.TestTbService" id="testTbService" url="dubbo://127.0.0.1:20880"/>
 
 
+    <!--全局设置-->
+    <dubbo:consumer timeout="600000" check="false"/>
 </beans>
